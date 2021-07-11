@@ -1,12 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/"></router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div><nev-bar />
+  <router-view />
   </div>
+  
 </template>
+<script>
+
+import NevBar from './components/NevBar.vue'
+export default {
+  components: { NevBar },
+ 
+}
+</script>
 
 <style>
 #app {
